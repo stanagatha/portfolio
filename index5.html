@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <link rel="stylesheet" href="css5/style5.css">
+    <title>Web Animada</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <h1>Solcito  Queen</h1>
+                <p>Developer web</p>
+            </div>
+
+            <form action="">
+                <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+            </form>
+
+            <div class="categorias" id="categorias">
+                <a href="#" class="activo">Todos</a>
+                <a href="#">Naturaleza</a>
+                <a href="#">Ciudades</a>
+                <a href="#">Personas</a>
+                <a href="#">Animales</a>
+            </div>
+        </header>     
+        
+        <section class="grid" id="grid">
+            <div class="item" 
+                data-categoria="naturaleza" 
+                data-etiquetas="naturaleza otoño paisaje rojo"
+                data-descripcion="Otoño rojo">                 
+                <div class="item-contenido">
+                    <img src="img5/otoño rojo.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="personas" 
+                data-etiquetas="personas mujeres trabajo computadora"
+                data-descripcion="Trabajando">                 
+                <div class="item-contenido">
+                    <img src="img5/personas3.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="animales" 
+                data-etiquetas="animales perro negro"
+                data-descripcion="Cachorrito">                 
+                <div class="item-contenido">
+                    <img src="img5/animal01.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="ciudades" 
+                data-etiquetas="ciudades paisajes otoño"
+                data-descripcion="Noche">                 
+                <div class="item-contenido">
+                    <img src="img5/ciudad01.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="naturaleza" 
+                data-etiquetas="naturaleza paisaje montaña"
+                data-descripcion="montaña">                 
+                <div class="item-contenido">
+                    <img src="img5/montaña.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="personas" 
+                data-etiquetas="personas paisaje"
+                data-descripcion="Limbo">                 
+                <div class="item-contenido">
+                    <img src="img5/personas02.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="animales" 
+                data-etiquetas="animales gato blanco"
+                data-descripcion="Mishi">                 
+                <div class="item-contenido">
+                    <img src="img5/animal2.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="ciudades" 
+                data-etiquetas="ciudades paisaje gris"
+                data-descripcion="Trabajando">                 
+                <div class="item-contenido">
+                    <img src="img5/ciudad3.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="naturaleza" 
+                data-etiquetas="naturaleza paisaje verde"
+                data-descripcion="Portal">                 
+                <div class="item-contenido">
+                    <img src="img5/portal verde.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="animales" 
+                data-etiquetas="animales perro juntos"
+                data-descripcion="Familia">                 
+                <div class="item-contenido">
+                    <img src="img5/animal3.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="naturaleza" 
+                data-etiquetas="naturaleza mariposa"
+                data-descripcion="Mariposa">                 
+                <div class="item-contenido">
+                    <img src="img5/mariposa.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="ciudades" 
+                data-etiquetas="ciudades noche"
+                data-descripcion="Ciudad">                 
+                <div class="item-contenido">
+                    <img src="img5/ciudad2.jpg" alt="">
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+                <img src="" alt="">
+            </div>
+            <p class="descripcion"> </p>
+        </section>
+
+        <footer class="contenedor">
+            <div class="redes-sociales">
+                <div class="contenedor-icono">
+                    <a href="http://twitter.com" target="_blank" class="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+
+                <div class="contenedor-icono">
+                    <a href="http://facebook.com" target="_blank" class="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+
+                <div class="contenedor-icono">
+                    <a href="http://instagram.com" target="_blank" class="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>            
+            </div>
+
+            <div class="creado-por">
+                <p>Sitio creado por: &nbsp <a href="#">Solcito</a> -  <a href="#">Developer Queen</a></p>                
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/5web-animations.min.js"></script>
+	<script src="js/5muuri.min.js"></script>
+    <script src="js/main5.js"></script>        
+</body>
+</html>
